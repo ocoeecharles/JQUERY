@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("button").fadeOut(function () {
+                    $.get("https://jsonplaceholder.typicode.com/posts", function (data, status) {
+                        $.each(data, function (index, value) {
+                            $("div").append("<p>" + value + JSON.stringify(value) + "</p>");
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <button>Click Here</button>
+    <div></div>
+</body>
+
+</html>
