@@ -1,6 +1,6 @@
 # JQUERY
 
-##Fake JSON app accessed through JQUERY command
+## Fake JSON app accessed through JQUERY command
 
 ![screenshot](image/jQuery.png)
 
